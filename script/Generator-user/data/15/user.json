@@ -1,0 +1,24 @@
+{
+    "id": 15,
+    "name": "Charles Boutin du Michaud",
+    "email": "vaubry@example.org",
+    "username": "philippemorel",
+    "job": "ingénieur concepteur conceptrice en mécanique",
+    "gender": "Femme",
+    "phone_number": "0327928496",
+    "website": "https://lacroix.fr/",
+    "address": "49, rue Renaud, 37351 Saint Tristan",
+    "birthdate": "1956-02-29",
+    "age": 67,
+    "interests": [
+        "Photo",
+        "Lecture",
+        "Voyages",
+        "Cuisine",
+        "Technologie",
+        "Cinéma"
+    ],
+    "user_image_url": "https://thispersondoesnotexist.com/",
+    "background_image_url": "https://source.unsplash.com/random/1920x1080",
+    "user_image_path": "./random_people/user_15.png"
+}

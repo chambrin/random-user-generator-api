@@ -1,0 +1,22 @@
+{
+    "id": 21,
+    "name": "Danielle de la Faivre",
+    "email": "danielle49@example.com",
+    "username": "kbodin",
+    "job": "vitrailliste",
+    "gender": "Femme",
+    "phone_number": "03 71 58 65 58",
+    "website": "http://julien.com/",
+    "address": "rue Nicolas, 46682 Peron-sur-Morin",
+    "birthdate": "2001-11-19",
+    "age": 21,
+    "interests": [
+        "Cuisine",
+        "Art",
+        "Animaux",
+        "Voyages"
+    ],
+    "user_image_url": "https://thispersondoesnotexist.com/",
+    "background_image_url": "https://source.unsplash.com/random/1920x1080",
+    "user_image_path": "./random_people/user_21.png"
+}

@@ -1,0 +1,21 @@
+{
+    "id": 6,
+    "name": "Adélaïde Richard",
+    "email": "lebretonzacharie@example.com",
+    "username": "aubertzacharie",
+    "job": "vendeur-conseil en matériel agricole",
+    "gender": "Homme",
+    "phone_number": "+33 3 85 64 01 49",
+    "website": "http://www.ruiz.fr/",
+    "address": "64, rue Anne Gomez, 12675 Saint Bernard",
+    "birthdate": "1963-03-22",
+    "age": 60,
+    "interests": [
+        "Art",
+        "Cinéma",
+        "Musique"
+    ],
+    "user_image_url": "https://thispersondoesnotexist.com/",
+    "background_image_url": "https://source.unsplash.com/random/1920x1080",
+    "user_image_path": "./random_people/user_6.png"
+}

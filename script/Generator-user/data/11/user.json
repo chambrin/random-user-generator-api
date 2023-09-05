@@ -1,0 +1,23 @@
+{
+    "id": 11,
+    "name": "Robert Charpentier",
+    "email": "delannoylouis@example.com",
+    "username": "simonalix",
+    "job": "astrophysicien",
+    "gender": "Femme",
+    "phone_number": "+33 4 30 03 96 65",
+    "website": "https://www.carre.net/",
+    "address": "46, rue Pénélope Robin, 84190 Allard",
+    "birthdate": "1975-08-03",
+    "age": 48,
+    "interests": [
+        "Photo",
+        "Cinéma",
+        "Voyages",
+        "Cuisine",
+        "Musique"
+    ],
+    "user_image_url": "https://thispersondoesnotexist.com/",
+    "background_image_url": "https://source.unsplash.com/random/1920x1080",
+    "user_image_path": "./random_people/user_11.png"
+}

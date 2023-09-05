@@ -1,0 +1,24 @@
+{
+    "id": 16,
+    "name": "Xavier Pruvost",
+    "email": "beguegenevieve@example.org",
+    "username": "vincent32",
+    "job": "ingénieur écoconcepteur écoconceptrice",
+    "gender": "Femme",
+    "phone_number": "04 26 90 43 06",
+    "website": "http://moreno.net/",
+    "address": "94, avenue de Bernier, 44256 Sainte Brigitte",
+    "birthdate": "1970-08-14",
+    "age": 53,
+    "interests": [
+        "Art",
+        "Cinéma",
+        "Lecture",
+        "Animaux",
+        "Voyages",
+        "Sport"
+    ],
+    "user_image_url": "https://thispersondoesnotexist.com/",
+    "background_image_url": "https://source.unsplash.com/random/1920x1080",
+    "user_image_path": "./random_people/user_16.png"
+}

@@ -1,0 +1,21 @@
+{
+    "id": 20,
+    "name": "Emmanuel Normand",
+    "email": "audrey24@example.com",
+    "username": "francoiseparis",
+    "job": "technicien en traitement des déchets",
+    "gender": "Homme",
+    "phone_number": "05 61 95 65 85",
+    "website": "http://chartier.fr/",
+    "address": "chemin Jérôme Delahaye, 09896 Dos Santos-les-Bains",
+    "birthdate": "2000-03-22",
+    "age": 23,
+    "interests": [
+        "Musique",
+        "Lecture",
+        "Cuisine"
+    ],
+    "user_image_url": "https://thispersondoesnotexist.com/",
+    "background_image_url": "https://source.unsplash.com/random/1920x1080",
+    "user_image_path": "./random_people/user_20.png"
+}

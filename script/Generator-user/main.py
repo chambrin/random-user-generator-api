@@ -5,7 +5,7 @@ import json
 from datetime import datetime
 from tqdm import tqdm
 import random
-import uuid
+from pathlib import Path
 
 def save_image(image_url, image_path):
     response = requests.get(image_url, stream=True)
@@ -21,23 +21,23 @@ def calculate_age(birthdate):
     return today.year - birthdate.year - ((today.month, today.day) < (birthdate.month, birthdate.day))
 
 if __name__ == "__main__":
-    num_users = 40  # CHOISIR le nombre d'utilisateurs à générer.
+    num_users = 40  # Choose the number of users to generate.
 
-    image_folder_path = "./random_people"  # DOSSIER pour stocker les images.
+    image_folder_path = "./random_people"  # Folder to store images.
     os.makedirs(image_folder_path, exist_ok=True)
 
-    root_data_folder = "data"  # DOSSIER RACINE pour stocker les données.
+    root_data_folder = "data"  # Root folder to store data.
     os.makedirs(root_data_folder, exist_ok=True)
 
-    fake = faker.Faker('fr_FR')  # Générer des détails d'utilisateur en français.
+    fake = faker.Faker('fr_FR')  # Generate user details in French.
 
     possible_interests = ["Sport", "Musique", "Cuisine", "Lecture", "Voyages", "Photo", "Art", "Technologie", "Cinéma", "Animaux"]
     global_users = []
 
     for i in tqdm(range(num_users)):
-        birthdate = fake.date_of_birth(minimum_age=20, maximum_age=70)  # Générer une date de naissance.
+        birthdate = fake.date_of_birth(minimum_age=20, maximum_age=70)  # Generate a birthdate.
         user = {
-            "id": uuid.uuid4().hex,  # Générer un ID unique.
+            "id": i+1,
             "name": fake.name(),
             "email": fake.email(),
             "username": fake.user_name(),
@@ -53,9 +53,34 @@ if __name__ == "__main__":
             "background_image_url": "https://source.unsplash.com/random/1920x1080"
         }
 
+        # Add user to global list
         global_users.append(user)
-        user_data_folder = os.path.join(root_data_folder, user["id"])
-        os.makedirs(user_data_folder, exist_ok=True)
+
+        # Prepare path for api endpoint file
+        filename = "route.ts"
+        filepath = Path(f"../../app/api/user/{user['id']}") / filename
+
+        # Create api directory if not exists
+        if not os.path.exists(filepath.parent):
+            os.makedirs(filepath.parent)
+
+            # Create and write to the API endpoint file
+            with open(filepath, "w") as file:
+                file.write(f"""
+            export async function GET(request: Request, res: Response) {{
+                const data = {json.dumps(user)};
+
+                return new Response(JSON.stringify(data), {{
+                    status: 200,
+                    headers: {{
+                        'Access-Control-Allow-Origin': '*',
+                        'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+                        'Content-Type': 'application/json',
+                        'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+                    }},
+                }});
+            }}
+                """)
 
         # Download image
         image_filename = f"user_{user['id']}.png"
@@ -65,10 +90,12 @@ if __name__ == "__main__":
         # Save the image path to the user object
         user["user_image_path"] = image_path
 
-        # Save the object to the JSON file.
+        # Now create and write to the user.json file.
+        user_data_folder = os.path.join(root_data_folder, str(user["id"]))
+        os.makedirs(user_data_folder, exist_ok=True)
         with open(os.path.join(user_data_folder, "user.json"), 'w') as file:
             json.dump(user, file, ensure_ascii=False, indent=4)
 
-    # Save global users to a JSON file
+    # Save all users to a global JSON file
     with open("users.json", 'w') as file:
         json.dump(global_users, file, ensure_ascii=False, indent=4)

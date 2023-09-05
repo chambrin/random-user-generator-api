@@ -1,0 +1,24 @@
+{
+    "id": 7,
+    "name": "Antoinette Hernandez",
+    "email": "alicemoulin@example.com",
+    "username": "margotmunoz",
+    "job": "responsable de la promotion des ventes",
+    "gender": "Homme",
+    "phone_number": "05 79 94 72 88",
+    "website": "https://de.fr/",
+    "address": "564, rue Sylvie Maréchal, 66806 Lopez",
+    "birthdate": "1973-11-07",
+    "age": 49,
+    "interests": [
+        "Cuisine",
+        "Musique",
+        "Art",
+        "Technologie",
+        "Photo",
+        "Voyages"
+    ],
+    "user_image_url": "https://thispersondoesnotexist.com/",
+    "background_image_url": "https://source.unsplash.com/random/1920x1080",
+    "user_image_path": "./random_people/user_7.png"
+}

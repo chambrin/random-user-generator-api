@@ -1,0 +1,22 @@
+{
+    "id": 30,
+    "name": "Édouard Meyer Le Dumont",
+    "email": "alexandre25@example.net",
+    "username": "riouhortense",
+    "job": "responsable de rémunération",
+    "gender": "Homme",
+    "phone_number": "+33 (0)2 36 93 20 13",
+    "website": "https://www.fleury.net/",
+    "address": "18, rue de Morel, 11493 Sainte Constance",
+    "birthdate": "1982-07-17",
+    "age": 41,
+    "interests": [
+        "Musique",
+        "Voyages",
+        "Technologie",
+        "Animaux"
+    ],
+    "user_image_url": "https://thispersondoesnotexist.com/",
+    "background_image_url": "https://source.unsplash.com/random/1920x1080",
+    "user_image_path": "./random_people/user_30.png"
+}

@@ -1,0 +1,22 @@
+{
+    "id": 22,
+    "name": "Michelle Hebert du Costa",
+    "email": "moniqueclement@example.com",
+    "username": "ybodin",
+    "job": "sellier",
+    "gender": "Femme",
+    "phone_number": "0141862168",
+    "website": "http://www.jacques.com/",
+    "address": "22, rue Astrid Teixeira, 71111 Petitjean",
+    "birthdate": "1999-12-29",
+    "age": 23,
+    "interests": [
+        "Musique",
+        "Technologie",
+        "Photo",
+        "Sport"
+    ],
+    "user_image_url": "https://thispersondoesnotexist.com/",
+    "background_image_url": "https://source.unsplash.com/random/1920x1080",
+    "user_image_path": "./random_people/user_22.png"
+}

@@ -1,0 +1,26 @@
+{
+    "id": 34,
+    "name": "Laurence de Georges",
+    "email": "massonleon@example.net",
+    "username": "qleclercq",
+    "job": "ingénieur support",
+    "gender": "Homme",
+    "phone_number": "05 81 62 98 32",
+    "website": "http://letellier.fr/",
+    "address": "boulevard de Blanchet, 81804 Riou",
+    "birthdate": "2002-12-09",
+    "age": 20,
+    "interests": [
+        "Cuisine",
+        "Musique",
+        "Technologie",
+        "Voyages",
+        "Sport",
+        "Animaux",
+        "Cinéma",
+        "Art"
+    ],
+    "user_image_url": "https://thispersondoesnotexist.com/",
+    "background_image_url": "https://source.unsplash.com/random/1920x1080",
+    "user_image_path": "./random_people/user_34.png"
+}

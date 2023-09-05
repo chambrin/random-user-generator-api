@@ -1,0 +1,25 @@
+{
+    "id": 10,
+    "name": "Léon Jourdan",
+    "email": "mariepoirier@example.net",
+    "username": "hmartins",
+    "job": "chargé d'affaires en génie climatique",
+    "gender": "Femme",
+    "phone_number": "+33 1 81 36 82 17",
+    "website": "http://www.bouvier.fr/",
+    "address": "chemin Victoire Marchal, 26714 Durand",
+    "birthdate": "1958-10-17",
+    "age": 64,
+    "interests": [
+        "Art",
+        "Cinéma",
+        "Animaux",
+        "Sport",
+        "Cuisine",
+        "Lecture",
+        "Voyages"
+    ],
+    "user_image_url": "https://thispersondoesnotexist.com/",
+    "background_image_url": "https://source.unsplash.com/random/1920x1080",
+    "user_image_path": "./random_people/user_10.png"
+}

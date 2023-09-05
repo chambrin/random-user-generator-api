@@ -1,0 +1,28 @@
+{
+    "id": 38,
+    "name": "René du Dupré",
+    "email": "arnaude51@example.net",
+    "username": "valentine49",
+    "job": "assistant de gestion en PME",
+    "gender": "Femme",
+    "phone_number": "+33 6 34 84 58 47",
+    "website": "https://www.lebrun.fr/",
+    "address": "rue de Girard, 38943 Lucas-sur-Roche",
+    "birthdate": "1993-11-06",
+    "age": 29,
+    "interests": [
+        "Animaux",
+        "Musique",
+        "Cinéma",
+        "Lecture",
+        "Technologie",
+        "Art",
+        "Cuisine",
+        "Sport",
+        "Voyages",
+        "Photo"
+    ],
+    "user_image_url": "https://thispersondoesnotexist.com/",
+    "background_image_url": "https://source.unsplash.com/random/1920x1080",
+    "user_image_path": "./random_people/user_38.png"
+}
