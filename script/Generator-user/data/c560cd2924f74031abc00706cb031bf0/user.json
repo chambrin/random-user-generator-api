@@ -1,0 +1,22 @@
+{
+    "id": "c560cd2924f74031abc00706cb031bf0",
+    "name": "Michelle Pasquier Le Charles",
+    "email": "martin09@example.com",
+    "username": "bretonmichel",
+    "job": "chargé des relations publiques",
+    "gender": "Femme",
+    "phone_number": "+33 3 44 73 77 32",
+    "website": "http://www.ramos.com/",
+    "address": "779, rue Jeanne Diaz, 92603 Rodriguez",
+    "birthdate": "1977-01-11",
+    "age": 46,
+    "interests": [
+        "Cuisine",
+        "Musique",
+        "Animaux",
+        "Lecture"
+    ],
+    "user_image_url": "https://thispersondoesnotexist.com/",
+    "background_image_url": "https://source.unsplash.com/random/1920x1080",
+    "user_image_path": "./random_people/user_c560cd2924f74031abc00706cb031bf0.png"
+}

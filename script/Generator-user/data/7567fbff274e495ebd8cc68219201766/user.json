@@ -1,0 +1,25 @@
+{
+    "id": "7567fbff274e495ebd8cc68219201766",
+    "name": "Aurélie Boucher-Bouvier",
+    "email": "lorrainefaivre@example.com",
+    "username": "sabinele-roux",
+    "job": "ingénieur d'affaires en génie électrique",
+    "gender": "Homme",
+    "phone_number": "+33 1 46 59 70 00",
+    "website": "https://www.hubert.fr/",
+    "address": "64, chemin Denise Chauveau, 09111 Germain",
+    "birthdate": "1971-04-02",
+    "age": 52,
+    "interests": [
+        "Musique",
+        "Sport",
+        "Technologie",
+        "Lecture",
+        "Photo",
+        "Cuisine",
+        "Cinéma"
+    ],
+    "user_image_url": "https://thispersondoesnotexist.com/",
+    "background_image_url": "https://source.unsplash.com/random/1920x1080",
+    "user_image_path": "./random_people/user_7567fbff274e495ebd8cc68219201766.png"
+}

@@ -1,0 +1,20 @@
+{
+    "id": "ebcd9ffc4f754b23b650e4e55118ea47",
+    "name": "Louise-Colette Da Costa",
+    "email": "isaac57@example.net",
+    "username": "virginie64",
+    "job": "spécialiste de l'accessibilité numérique",
+    "gender": "Homme",
+    "phone_number": "01 80 43 08 37",
+    "website": "https://www.guillot.fr/",
+    "address": "3, rue de Giraud, 68941 Blanc",
+    "birthdate": "1982-11-19",
+    "age": 40,
+    "interests": [
+        "Animaux",
+        "Sport"
+    ],
+    "user_image_url": "https://thispersondoesnotexist.com/",
+    "background_image_url": "https://source.unsplash.com/random/1920x1080",
+    "user_image_path": "./random_people/user_ebcd9ffc4f754b23b650e4e55118ea47.png"
+}

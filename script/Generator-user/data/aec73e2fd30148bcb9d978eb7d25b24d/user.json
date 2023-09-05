@@ -1,0 +1,21 @@
+{
+    "id": "aec73e2fd30148bcb9d978eb7d25b24d",
+    "name": "Michelle De Oliveira de Mary",
+    "email": "adriennemartineau@example.org",
+    "username": "etienneriviere",
+    "job": "relieur-doreur",
+    "gender": "Femme",
+    "phone_number": "+33 (0)2 57 99 31 29",
+    "website": "http://www.olivier.org/",
+    "address": "368, boulevard Nathalie Lombard, 08481 Arnauddan",
+    "birthdate": "1978-12-30",
+    "age": 44,
+    "interests": [
+        "Art",
+        "Musique",
+        "Technologie"
+    ],
+    "user_image_url": "https://thispersondoesnotexist.com/",
+    "background_image_url": "https://source.unsplash.com/random/1920x1080",
+    "user_image_path": "./random_people/user_aec73e2fd30148bcb9d978eb7d25b24d.png"
+}

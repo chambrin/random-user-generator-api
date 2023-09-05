@@ -1,0 +1,27 @@
+{
+    "id": "1905076a23de4b5ca091eec88a3e1d56",
+    "name": "Bertrand Gosselin",
+    "email": "adrien06@example.com",
+    "username": "vpineau",
+    "job": "technicien packaging",
+    "gender": "Femme",
+    "phone_number": "+33 (0)1 58 20 01 53",
+    "website": "https://www.maillard.com/",
+    "address": "59, boulevard Weiss, 97212 Guillou",
+    "birthdate": "1982-08-27",
+    "age": 41,
+    "interests": [
+        "Voyages",
+        "Cuisine",
+        "Animaux",
+        "Photo",
+        "Sport",
+        "Musique",
+        "Cinéma",
+        "Art",
+        "Lecture"
+    ],
+    "user_image_url": "https://thispersondoesnotexist.com/",
+    "background_image_url": "https://source.unsplash.com/random/1920x1080",
+    "user_image_path": "./random_people/user_1905076a23de4b5ca091eec88a3e1d56.png"
+}

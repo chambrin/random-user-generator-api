@@ -1,0 +1,28 @@
+{
+    "id": "e2531e917cd7427984812da0191a2fb0",
+    "name": "Lucie Boyer",
+    "email": "bonnetmargaux@example.com",
+    "username": "jean40",
+    "job": "ingénieur d'études en sûreté nucléaire",
+    "gender": "Homme",
+    "phone_number": "05 34 61 31 73",
+    "website": "https://www.lefort.com/",
+    "address": "24, boulevard Eugène Bouvier, 90182 WagnerBourg",
+    "birthdate": "1967-09-18",
+    "age": 55,
+    "interests": [
+        "Cinéma",
+        "Lecture",
+        "Musique",
+        "Technologie",
+        "Cuisine",
+        "Animaux",
+        "Photo",
+        "Voyages",
+        "Sport",
+        "Art"
+    ],
+    "user_image_url": "https://thispersondoesnotexist.com/",
+    "background_image_url": "https://source.unsplash.com/random/1920x1080",
+    "user_image_path": "./random_people/user_e2531e917cd7427984812da0191a2fb0.png"
+}

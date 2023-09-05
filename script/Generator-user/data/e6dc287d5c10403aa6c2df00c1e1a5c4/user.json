@@ -1,0 +1,22 @@
+{
+    "id": "e6dc287d5c10403aa6c2df00c1e1a5c4",
+    "name": "Hugues Gallet",
+    "email": "pierreeleonore@example.com",
+    "username": "dlemaitre",
+    "job": "formateur technique en agroéquipement",
+    "gender": "Femme",
+    "phone_number": "+33 2 33 46 89 38",
+    "website": "https://carpentier.fr/",
+    "address": "81, rue Bonnin, 25865 Marie",
+    "birthdate": "1988-05-07",
+    "age": 35,
+    "interests": [
+        "Sport",
+        "Technologie",
+        "Art",
+        "Voyages"
+    ],
+    "user_image_url": "https://thispersondoesnotexist.com/",
+    "background_image_url": "https://source.unsplash.com/random/1920x1080",
+    "user_image_path": "./random_people/user_e6dc287d5c10403aa6c2df00c1e1a5c4.png"
+}

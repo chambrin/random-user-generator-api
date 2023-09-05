@@ -1,0 +1,28 @@
+{
+    "id": "2e2710e41c3548af953aa82ba5018274",
+    "name": "Jeanne Evrard",
+    "email": "pbaron@example.com",
+    "username": "luce72",
+    "job": "statisticien",
+    "gender": "Femme",
+    "phone_number": "+33 3 28 36 38 35",
+    "website": "http://www.brunet.com/",
+    "address": "chemin de Rodriguez, 77395 Saint Manon-les-Bains",
+    "birthdate": "1954-05-21",
+    "age": 69,
+    "interests": [
+        "Lecture",
+        "Technologie",
+        "Cinéma",
+        "Voyages",
+        "Sport",
+        "Photo",
+        "Cuisine",
+        "Art",
+        "Animaux",
+        "Musique"
+    ],
+    "user_image_url": "https://thispersondoesnotexist.com/",
+    "background_image_url": "https://source.unsplash.com/random/1920x1080",
+    "user_image_path": "./random_people/user_2e2710e41c3548af953aa82ba5018274.png"
+}

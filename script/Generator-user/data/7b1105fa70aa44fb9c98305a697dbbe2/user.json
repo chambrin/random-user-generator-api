@@ -1,0 +1,27 @@
+{
+    "id": "7b1105fa70aa44fb9c98305a697dbbe2",
+    "name": "Michelle Bonneau",
+    "email": "jacquesjacques@example.net",
+    "username": "ulucas",
+    "job": "professeur de lycée professionnel",
+    "gender": "Homme",
+    "phone_number": "+33 4 22 84 71 84",
+    "website": "http://www.fernandez.fr/",
+    "address": "rue de Brunel, 56884 Rocher-sur-Mer",
+    "birthdate": "1957-07-30",
+    "age": 66,
+    "interests": [
+        "Animaux",
+        "Musique",
+        "Voyages",
+        "Lecture",
+        "Technologie",
+        "Cinéma",
+        "Cuisine",
+        "Sport",
+        "Photo"
+    ],
+    "user_image_url": "https://thispersondoesnotexist.com/",
+    "background_image_url": "https://source.unsplash.com/random/1920x1080",
+    "user_image_path": "./random_people/user_7b1105fa70aa44fb9c98305a697dbbe2.png"
+}

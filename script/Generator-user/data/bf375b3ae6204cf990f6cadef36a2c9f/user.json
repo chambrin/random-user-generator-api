@@ -1,0 +1,25 @@
+{
+    "id": "bf375b3ae6204cf990f6cadef36a2c9f",
+    "name": "Étienne Delattre Le Lamy",
+    "email": "maryse74@example.com",
+    "username": "othibault",
+    "job": "maître d'hôtel",
+    "gender": "Homme",
+    "phone_number": "0457843221",
+    "website": "https://renault.fr/",
+    "address": "45, chemin de Lemaître, 22959 ChevalierBourg",
+    "birthdate": "1964-11-13",
+    "age": 58,
+    "interests": [
+        "Lecture",
+        "Voyages",
+        "Technologie",
+        "Art",
+        "Animaux",
+        "Cuisine",
+        "Sport"
+    ],
+    "user_image_url": "https://thispersondoesnotexist.com/",
+    "background_image_url": "https://source.unsplash.com/random/1920x1080",
+    "user_image_path": "./random_people/user_bf375b3ae6204cf990f6cadef36a2c9f.png"
+}

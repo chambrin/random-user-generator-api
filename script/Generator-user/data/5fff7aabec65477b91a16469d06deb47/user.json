@@ -1,0 +1,23 @@
+{
+    "id": "5fff7aabec65477b91a16469d06deb47",
+    "name": "Louis Giraud",
+    "email": "dupuisvalentine@example.com",
+    "username": "jean76",
+    "job": "étanchéiste",
+    "gender": "Femme",
+    "phone_number": "0596039420",
+    "website": "http://poirier.fr/",
+    "address": "80, boulevard de Picard, 01114 Gimenez",
+    "birthdate": "1953-12-17",
+    "age": 69,
+    "interests": [
+        "Voyages",
+        "Lecture",
+        "Animaux",
+        "Art",
+        "Cinéma"
+    ],
+    "user_image_url": "https://thispersondoesnotexist.com/",
+    "background_image_url": "https://source.unsplash.com/random/1920x1080",
+    "user_image_path": "./random_people/user_5fff7aabec65477b91a16469d06deb47.png"
+}

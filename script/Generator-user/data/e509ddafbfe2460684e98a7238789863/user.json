@@ -1,0 +1,25 @@
+{
+    "id": "e509ddafbfe2460684e98a7238789863",
+    "name": "Catherine Moreno-Dupré",
+    "email": "marie05@example.net",
+    "username": "alex42",
+    "job": "acheteur",
+    "gender": "Femme",
+    "phone_number": "0188518878",
+    "website": "http://baron.fr/",
+    "address": "12, rue Bourdon, 34358 Vallet",
+    "birthdate": "1991-01-23",
+    "age": 32,
+    "interests": [
+        "Cinéma",
+        "Cuisine",
+        "Voyages",
+        "Art",
+        "Technologie",
+        "Animaux",
+        "Photo"
+    ],
+    "user_image_url": "https://thispersondoesnotexist.com/",
+    "background_image_url": "https://source.unsplash.com/random/1920x1080",
+    "user_image_path": "./random_people/user_e509ddafbfe2460684e98a7238789863.png"
+}

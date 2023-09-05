@@ -1,0 +1,26 @@
+{
+    "id": "b3601933a403497b8ebf593799cf62b4",
+    "name": "Marc Legros",
+    "email": "imbertluc@example.org",
+    "username": "louisperez",
+    "job": "éducateur sportif sportive",
+    "gender": "Femme",
+    "phone_number": "0415151329",
+    "website": "https://www.daniel.fr/",
+    "address": "392, boulevard Amélie Sauvage, 06854 Sainte Brigitte",
+    "birthdate": "1952-10-28",
+    "age": 70,
+    "interests": [
+        "Technologie",
+        "Photo",
+        "Musique",
+        "Cinéma",
+        "Art",
+        "Lecture",
+        "Voyages",
+        "Animaux"
+    ],
+    "user_image_url": "https://thispersondoesnotexist.com/",
+    "background_image_url": "https://source.unsplash.com/random/1920x1080",
+    "user_image_path": "./random_people/user_b3601933a403497b8ebf593799cf62b4.png"
+}

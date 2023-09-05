@@ -1,0 +1,26 @@
+{
+    "id": "c8a78008b4ff4915b898ab2ce76f72bd",
+    "name": "Lucas-Théophile Klein",
+    "email": "duprejoseph@example.com",
+    "username": "laurenceguillaume",
+    "job": "énergéticien",
+    "gender": "Femme",
+    "phone_number": "07 58 37 45 54",
+    "website": "https://www.lacroix.fr/",
+    "address": "62, rue de Leleu, 51838 Fernandes",
+    "birthdate": "1984-04-03",
+    "age": 39,
+    "interests": [
+        "Cinéma",
+        "Sport",
+        "Lecture",
+        "Musique",
+        "Cuisine",
+        "Art",
+        "Technologie",
+        "Voyages"
+    ],
+    "user_image_url": "https://thispersondoesnotexist.com/",
+    "background_image_url": "https://source.unsplash.com/random/1920x1080",
+    "user_image_path": "./random_people/user_c8a78008b4ff4915b898ab2ce76f72bd.png"
+}

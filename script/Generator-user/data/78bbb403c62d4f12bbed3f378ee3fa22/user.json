@@ -1,0 +1,26 @@
+{
+    "id": "78bbb403c62d4f12bbed3f378ee3fa22",
+    "name": "Susanne Bonneau",
+    "email": "cvasseur@example.org",
+    "username": "kalexandre",
+    "job": "ingénieur matériaux",
+    "gender": "Homme",
+    "phone_number": "+33 (0)1 49 49 32 57",
+    "website": "https://dijoux.com/",
+    "address": "93, avenue Blanc, 86972 Roussel",
+    "birthdate": "1983-03-07",
+    "age": 40,
+    "interests": [
+        "Art",
+        "Cinéma",
+        "Animaux",
+        "Sport",
+        "Technologie",
+        "Photo",
+        "Cuisine",
+        "Lecture"
+    ],
+    "user_image_url": "https://thispersondoesnotexist.com/",
+    "background_image_url": "https://source.unsplash.com/random/1920x1080",
+    "user_image_path": "./random_people/user_78bbb403c62d4f12bbed3f378ee3fa22.png"
+}

@@ -1,0 +1,25 @@
+{
+    "id": "681e05f64b9a46328b114f48f3a87866",
+    "name": "Jeanne-Lorraine Potier",
+    "email": "margotgillet@example.org",
+    "username": "alicepires",
+    "job": "libraire",
+    "gender": "Femme",
+    "phone_number": "0228362945",
+    "website": "https://loiseau.com/",
+    "address": "7, chemin de Lefebvre, 25114 Bernard-sur-Morin",
+    "birthdate": "2003-02-03",
+    "age": 20,
+    "interests": [
+        "Sport",
+        "Lecture",
+        "Photo",
+        "Art",
+        "Cinéma",
+        "Voyages",
+        "Musique"
+    ],
+    "user_image_url": "https://thispersondoesnotexist.com/",
+    "background_image_url": "https://source.unsplash.com/random/1920x1080",
+    "user_image_path": "./random_people/user_681e05f64b9a46328b114f48f3a87866.png"
+}
