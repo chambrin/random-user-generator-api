@@ -90,12 +90,23 @@ if __name__ == "__main__":
         # Save the image path to the user object
         user["user_image_path"] = image_path
 
-        # Now create and write to the user.json file.
-        user_data_folder = os.path.join(root_data_folder, str(user["id"]))
-        os.makedirs(user_data_folder, exist_ok=True)
-        with open(os.path.join(user_data_folder, "user.json"), 'w') as file:
-            json.dump(user, file, ensure_ascii=False, indent=4)
-
-    # Save all users to a global JSON file
-    with open("users.json", 'w') as file:
-        json.dump(global_users, file, ensure_ascii=False, indent=4)
+        # File with all users.
+        all_filepath = Path(f"../../app/api/user/all") / filename  # Path for all users
+        if not os.path.exists(all_filepath.parent):
+            os.makedirs(all_filepath.parent)
+        # Create and write to the API endpoint file
+        with open(all_filepath, "w") as file:
+            file.write(f"""
+            export async function GET(request: Request, res: Response) {{
+            const data = {json.dumps(global_users)};
+            return new Response(JSON.stringify(data), {{
+                    status: 200,
+                    headers: {{
+                        'Access-Control-Allow-Origin': '*',
+                        'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+                        'Content-Type': 'application/json',
+                        'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+                    }},
+                }});
+        }}
+            """)
