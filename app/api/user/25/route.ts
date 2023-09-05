@@ -1,6 +1,6 @@
 
             export async function GET(request: Request, res: Response) {
-                const data = {"id": 25, "name": "Astrid Monnier", "email": "stephaniegodard@example.com", "username": "thibautmaillet", "job": "c\u00e9ramiste", "gender": "Homme", "phone_number": "04 42 89 32 00", "website": "https://www.hardy.fr/", "address": "chemin Bigot, 76375 Voisin-les-Bains", "birthdate": "1971-11-25", "age": 51, "interests": ["Animaux", "Photo", "Musique", "Cuisine", "Voyages", "Cin\u00e9ma"], "user_image_url": "/random_avatar/user_25.png", "background_image_url": "https://source.unsplash.com/random/1920x1080"};
+                const data = {"id": 25, "name": "\u00c9ric Guillot", "email": "eleonore88@example.com", "username": "victorfischer", "job": "technicien logistique", "gender": "Homme", "phone_number": "+33 1 55 18 46 69", "website": "https://www.bruneau.fr/", "address": "1, rue Benjamin Aubry, 44439 Turpin", "birthdate": "1963-06-16", "age": 60, "interests": ["Voyages", "Musique"], "user_image_url": "/random_avatar/user_25.png", "background_image_url": "https://source.unsplash.com/random/1920x1080"};
 
                 return new Response(JSON.stringify(data), {
                     status: 200,
