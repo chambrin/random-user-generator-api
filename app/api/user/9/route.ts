@@ -1,6 +1,6 @@
 
             export async function GET(request: Request, res: Response) {
-                const data = {"id": 9, "name": "Jeanne Jean", "email": "charlotte89@example.org", "username": "dgosselin", "job": "ing\u00e9nieur analyste de l'air", "gender": "Femme", "phone_number": "+33 (0)4 78 53 52 86", "website": "https://petit.org/", "address": "avenue Raymond, 76477 Weiss-sur-Michaud", "birthdate": "2003-05-27", "age": 20, "interests": ["Lecture", "Musique", "Voyages", "Cin\u00e9ma", "Photo", "Sport", "Art", "Cuisine", "Animaux"], "user_image_url": "https://thispersondoesnotexist.com/", "background_image_url": "https://source.unsplash.com/random/1920x1080"};
+                const data = {"id": 9, "name": "Nicolas David", "email": "adriennedumas@example.com", "username": "zrobert", "job": "d\u00e9veloppeur d'applications mobiles", "gender": "Femme", "phone_number": "+33 2 34 38 15 55", "website": "http://gregoire.fr/", "address": "55, rue de Lema\u00eetre, 18574 Sainte J\u00e9r\u00f4me-les-Bains", "birthdate": "1982-03-22", "age": 41, "interests": ["Technologie", "Animaux", "Lecture", "Photo"], "user_image_url": "/random_avatar/user_9.png", "background_image_url": "https://source.unsplash.com/random/1920x1080"};
 
                 return new Response(JSON.stringify(data), {
                     status: 200,

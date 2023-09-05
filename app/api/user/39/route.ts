@@ -1,6 +1,6 @@
 
             export async function GET(request: Request, res: Response) {
-                const data = {"id": 39, "name": "Jules Allard de la Bazin", "email": "henryadele@example.net", "username": "alphonse44", "job": "m\u00e9decin humanitaire", "gender": "Homme", "phone_number": "03 52 38 80 25", "website": "http://www.dupuy.com/", "address": "87, chemin Andr\u00e9e Hebert, 81306 Cohen-sur-Mer", "birthdate": "1973-03-06", "age": 50, "interests": ["Cin\u00e9ma", "Technologie", "Sport", "Cuisine", "Musique", "Art", "Lecture", "Photo", "Voyages"], "user_image_url": "https://thispersondoesnotexist.com/", "background_image_url": "https://source.unsplash.com/random/1920x1080"};
+                const data = {"id": 39, "name": "\u00c9douard Arnaud", "email": "anastasiecosta@example.org", "username": "joseph63", "job": "restaurateur d'oeuvres d'art", "gender": "Homme", "phone_number": "+33 1 41 75 43 41", "website": "http://lenoir.com/", "address": "713, avenue de Julien, 92456 Humbert", "birthdate": "1987-10-25", "age": 35, "interests": ["Cuisine", "Technologie", "Lecture", "Cin\u00e9ma", "Animaux", "Musique", "Sport", "Voyages", "Photo", "Art"], "user_image_url": "/random_avatar/user_39.png", "background_image_url": "https://source.unsplash.com/random/1920x1080"};
 
                 return new Response(JSON.stringify(data), {
                     status: 200,
