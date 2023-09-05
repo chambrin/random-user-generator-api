@@ -1,6 +1,6 @@
 
             export async function GET(request: Request, res: Response) {
-                const data = {"id": 5, "name": "Sophie Schneider-Rodrigues", "email": "josephine79@example.org", "username": "marcellegimenez", "job": "chef d'exploitation d'usine d'incin\u00e9ration", "gender": "Femme", "phone_number": "+33 5 36 97 51 45", "website": "http://www.berthelot.fr/", "address": "54, chemin Breton, 71990 Hoareau", "birthdate": "1967-09-25", "age": 55, "interests": ["Lecture", "Photo", "Musique", "Sport", "Technologie"], "user_image_url": "/random_avatar/user_5.png", "background_image_url": "https://source.unsplash.com/random/1920x1080"};
+                const data = {"id": 5, "name": "Gabriel-Ren\u00e9 Didier", "email": "paulinegeorges@example.com", "username": "charles25", "job": "ing\u00e9nieur math\u00e9maticien", "gender": "Femme", "phone_number": "+33 (0)3 39 18 84 17", "website": "https://duval.fr/", "address": "299, rue Berthelot, 75627 PascalBourg", "birthdate": "1985-03-11", "age": 38, "interests": ["Animaux", "Art", "Cin\u00e9ma", "Technologie", "Lecture", "Sport", "Musique", "Photo", "Cuisine", "Voyages"], "user_image_url": "/random_avatar/user_5.png", "background_image_url": "https://source.unsplash.com/random/1920x1080"};
 
                 return new Response(JSON.stringify(data), {
                     status: 200,
