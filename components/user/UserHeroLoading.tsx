@@ -1,14 +1,14 @@
 'use client'
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { FaUser, FaEnvelope, FaHome, FaPhoneAlt } from 'react-icons/fa';
-
+import { FaRedo, FaUser, FaEnvelope, FaHome, FaPhoneAlt, FaBriefcase, FaTransgender, FaBirthdayCake, FaGlobeEurope, FaGuitar } from 'react-icons/fa';
 export default function CardUserHero() {
     const [tab, setTab] = useState('info');
     const [user, setUser] = useState(null);
     const [x , setX] = useState(0);
     const [y, setY] = useState(0);
-
+    // animation de licon du bouton randomize
+    const [isRotating, setIsRotating] = useState(false);
     // get the user data
     useEffect(() => {
         fetch('http://localhost:3002/api/user/1')
@@ -47,6 +47,16 @@ export default function CardUserHero() {
         },
     };
 
+
+
+    const handleClick = () => {
+        setIsRotating(true);
+        setTimeout(() => {
+            setIsRotating(false);
+        }, 1000);
+    };
+
+
     return (
         <div
 
@@ -70,52 +80,86 @@ export default function CardUserHero() {
             </div>
 
             <div className='px-6 py-4 text-white space-x-2 flex justify-between'>
-                <motion.button
-                    variants={floatVariants}
-                    initial="hidden"
-                    animate="show"
+                <button
                     className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full'
                     onClick={() => setTab('info')}
                 >
                     <FaUser />
-                </motion.button>
-                <motion.button
-                    variants={floatVariants}
-                    initial="hidden"
-                    animate="show"
+                </button>
+                <button
                     className='bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full'
                     onClick={() => setTab('email')}
                 >
                     <FaEnvelope />
-                </motion.button>
-                <motion.button
-                    variants={floatVariants}
-                    initial="hidden"
-                    animate="show"
+                </button>
+                <button
                     className='bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded-full'
                     onClick={() => setTab('address')}
                 >
                     <FaHome />
-                </motion.button>
-                <motion.button
-                    variants={floatVariants}
-                    initial="hidden"
-                    animate="show"
+                </button>
+                <button
                     className='bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full'
                     onClick={() => setTab('phone')}
                 >
                     <FaPhoneAlt />
-                </motion.button>
+                </button>
+                <button
+                    className='bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-full'
+                    onClick={() => setTab('job')}
+                >
+                    <FaBriefcase />
+                </button>
+                <button
+                    className='bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded-full'
+                    onClick={() => setTab('gender')}
+                >
+                    <FaTransgender />
+                </button>
+                <button
+                    className='bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-full'
+                    onClick={() => setTab('birthday')}
+                >
+                    <FaBirthdayCake />
+                </button>
+                <button
+                    className='bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded-full'
+                    onClick={() => setTab('website')}
+                >
+                    <FaGlobeEurope />
+                </button>
+                <button
+                    className='bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-full'
+                    onClick={() => setTab('interests')}
+                >
+                    <FaGuitar />
+                </button>
             </div>
 
-            <div className=' bg-opacity-75 rounded-lg shadow-lg p-4 m-2 text-center'>
+            <div className='rounded-lg shadow-lg p-4 m-2 text-center'>
                 {tab === 'info' && <p className='text-xl font-semibold'>{user.name}</p>}
                 {tab === 'email' && <p className='text-xl font-semibold'>{user.email}</p>}
                 {tab === 'address' && <p className='text-xl font-semibold'>{user.address}</p>}
                 {tab === 'phone' && <p className='text-xl font-semibold'>{user.phone_number}</p>}
+                {tab === 'job' && <p className='text-xl font-semibold'>{user.job}</p>}
+                {tab === 'gender' && <p className='text-xl font-semibold'>{user.gender}</p>}
+                {tab === 'birthday' && <p className='text-xl font-semibold'>{user.birthdate}</p>}
+                {tab === 'website' && <p className='text-xl font-semibold'>{user.website}</p>}
+                {tab === 'interests' && <p className='text-xl font-semibold'>{user.interests.join(', ')}</p>}
+            </div>
+            <div className='flex flex-col items-center justify-center'>
+                <button
+                    onClick={handleClick}
+                    className='btn solid warn flex items-center compact'
+                >
+                    <FaRedo className={`mr-2 ${isRotating ? 'animate-spin' : ''}`} />
+                    Randomize
+                </button>
             </div>
 
+
         </div>
+
     );
 
 }
