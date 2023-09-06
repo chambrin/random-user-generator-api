@@ -3,7 +3,8 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { FaRedo, FaUser, FaEnvelope, FaHome, FaPhoneAlt, FaBriefcase, FaTransgender, FaBirthdayCake, FaGlobeEurope, FaGuitar } from 'react-icons/fa';
-import { User } from '../../types/user.types';
+import { User } from '@/types/user.types';
+import CardUserHeroLaoder from "@/components/user/Loader.UserHeroloading";
 
 
 
@@ -13,11 +14,12 @@ export default function CardUserHero() {
     const [user, setUser] = useState<User | null>(null);
     const [x , setX] = useState(0);
     const [y, setY] = useState(0);
+
     // animation de licon du bouton randomize
     const [isRotating, setIsRotating] = useState(false);
     // get the user data
     useEffect(() => {
-        fetch('http://localhost:3002/api/user/1')
+        fetch('http://localhost:3002/api/random')
             .then(response => response.json())
             .then(data => setUser(data))
             .catch(error => console.log(error));
@@ -25,16 +27,15 @@ export default function CardUserHero() {
 
 
 
-
-    if (!user) return <div className='loader bw'>
-        <div className='flow-cross' />
-    </div>;
-
-
+    if (!user) return <CardUserHeroLaoder />;
 
 
     const handleClick = () => {
         setIsRotating(true);
+        fetch('http://localhost:3002/api/random')
+            .then(response => response.json())
+            .then(data => setUser(data))
+            .catch(error => console.log(error));
         setTimeout(() => {
             setIsRotating(false);
         }, 1000);
