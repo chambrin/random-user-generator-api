@@ -1,6 +1,7 @@
 'use client'
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { FaRedo, FaUser, FaEnvelope, FaHome, FaPhoneAlt, FaBriefcase, FaTransgender, FaBirthdayCake, FaGlobeEurope, FaGuitar } from 'react-icons/fa';
 export default function CardUserHero() {
     const [tab, setTab] = useState('info');
@@ -68,11 +69,14 @@ export default function CardUserHero() {
                 animate="show"
                 className='w-1/2 p-5'
             >
-                <img
+                <Image // Remplacé <img> par <Image>
                     className='rounded-full max-w-full h-auto object-cover mx-auto ring-2 ring-[#5142FC]'
                     src={user.user_image_url}
                     alt="User avatar"
+                    width={500} // Ajouter une largeur
+                    height={500} // Ajouter une hauteur
                 />
+
             </motion.div>
 
             <div className=''>
