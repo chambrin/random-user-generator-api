@@ -3,9 +3,14 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { FaRedo, FaUser, FaEnvelope, FaHome, FaPhoneAlt, FaBriefcase, FaTransgender, FaBirthdayCake, FaGlobeEurope, FaGuitar } from 'react-icons/fa';
+import { User } from '../../types/user.types';
+
+
+
+
 export default function CardUserHero() {
     const [tab, setTab] = useState('info');
-    const [user, setUser] = useState(null);
+    const [user, setUser] = useState<User | null>(null);
     const [x , setX] = useState(0);
     const [y, setY] = useState(0);
     // animation de licon du bouton randomize
@@ -18,25 +23,12 @@ export default function CardUserHero() {
             .catch(error => console.log(error));
     }, [])
 
-    // detect the mousemove and update x and y
-    useEffect(() => {
-        const handleMouseMove = (e: MouseEvent) => {
-            setX((e.clientY / window.innerHeight - 0.5) * 40);
-            setY((e.clientX / window.innerWidth - 0.5) * -40);
-        };
-        window.addEventListener('mousemove', handleMouseMove);
 
-        return () => {
-            window.removeEventListener('mousemove', handleMouseMove);
-        };
-    }, []);
 
 
     if (!user) return <div className='loader bw'>
         <div className='flow-cross' />
     </div>;
-
-
 
 
 
