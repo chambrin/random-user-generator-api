@@ -1,6 +1,6 @@
 export async function GET(request: Request, res: Response) {
     let randomId = Math.floor(Math.random() * 40) + 1; // generate a random number between 1 and 40
-    let url = `https://random-user-generator-api-git-master-chambrin.vercel.app/api/user/${randomId}`; // replace with your API's URL
+    let url = `${process.env.API_BASE_URL}/api/user/${randomId}`;
 
     // Fetch the user's data
     try {
