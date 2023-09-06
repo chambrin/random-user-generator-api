@@ -20,7 +20,7 @@ export default function CardUserHero() {
     const [isRotating, setIsRotating] = useState(false);
     // get the user data
     useEffect(() => {
-        fetch('http://localhost:3000/api/random')
+        fetch('https://random-user-generator-api-chambrin.vercel.app/api/random')
             .then(response => response.json())
             .then(data => setUser(data))
             .catch(error => console.log(error));
@@ -33,7 +33,7 @@ export default function CardUserHero() {
 
     const handleClick = () => {
         setIsRotating(true);
-        fetch('http://localhost:3000/api/random')
+        fetch('https://random-user-generator-api-chambrin.vercel.app/api/random')
             .then(response => response.json())
             .then(data => setUser(data))
             .catch(error => console.log(error));
