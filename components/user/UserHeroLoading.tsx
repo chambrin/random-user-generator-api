@@ -20,7 +20,7 @@ export default function CardUserHero() {
 
     // detect the mousemove and update x and y
     useEffect(() => {
-        const handleMouseMove = (e) => {
+        const handleMouseMove = (e: MouseEvent) => {
             setX((e.clientY / window.innerHeight - 0.5) * 40);
             setY((e.clientX / window.innerWidth - 0.5) * -40);
         };
@@ -30,6 +30,7 @@ export default function CardUserHero() {
             window.removeEventListener('mousemove', handleMouseMove);
         };
     }, []);
+
 
     if (!user) return <div className='loader bw'>
         <div className='flow-cross' />
