@@ -4,7 +4,8 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { FaRedo, FaUser, FaEnvelope, FaHome, FaPhoneAlt, FaBriefcase, FaTransgender, FaBirthdayCake, FaGlobeEurope, FaGuitar } from 'react-icons/fa';
 import { User } from '@/types/user.types';
-import CardUserHeroLaoder from "@/components/user/Loader.UserHeroloading";
+// @ts-ignore
+import CardUserHeroLaoder from "/components/user/Loader.UserHeroloading";
 
 
 
@@ -19,7 +20,7 @@ export default function CardUserHero() {
     const [isRotating, setIsRotating] = useState(false);
     // get the user data
     useEffect(() => {
-        fetch('http://localhost:3002/api/random')
+        fetch('http://localhost:3000/api/random')
             .then(response => response.json())
             .then(data => setUser(data))
             .catch(error => console.log(error));
@@ -32,7 +33,7 @@ export default function CardUserHero() {
 
     const handleClick = () => {
         setIsRotating(true);
-        fetch('http://localhost:3002/api/random')
+        fetch('http://localhost:3000/api/random')
             .then(response => response.json())
             .then(data => setUser(data))
             .catch(error => console.log(error));
