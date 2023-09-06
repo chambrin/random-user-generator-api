@@ -36,18 +36,8 @@ export default function CardUserHero() {
         <div className='flow-cross' />
     </div>;
 
-    // Animation settings
-    const floatVariants = {
-        hidden: { y: -2 },
-        show: {
-            y: 2,
-            transition: {
-                repeat: Infinity,
-                repeatType: 'reverse',
-                duration: .600
-            },
-        },
-    };
+
+
 
 
 
@@ -65,9 +55,8 @@ export default function CardUserHero() {
             className='UserGeneratorHero flex flex-col items-center justify-center p-6 gap-6 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg shadow-lg'
         >
             <motion.div
-                variants={floatVariants}
-                initial="hidden"
-                animate="show"
+                initial={{ y: 0 }}
+                animate={{ y: -10, transition: { repeat: Infinity, repeatType: "reverse", duration: 2 } }}
                 className='w-1/2 p-5'
             >
                 <Image // Remplacé <img> par <Image>
