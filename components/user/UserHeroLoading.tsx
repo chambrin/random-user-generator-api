@@ -16,11 +16,12 @@ export default function CardUserHero() {
     const [x , setX] = useState(0);
     const [y, setY] = useState(0);
 
+
     // animation de licon du bouton randomize
     const [isRotating, setIsRotating] = useState(false);
     // get the user data
     useEffect(() => {
-        fetch('https://random-user-generator-api-chambrin.vercel.app/api/random')
+        fetch('https://random-user-generator-api-chambrin.vercel.app/api/user/1')
             .then(response => response.json())
             .then(data => setUser(data))
             .catch(error => console.log(error));
@@ -33,10 +34,15 @@ export default function CardUserHero() {
 
     const handleClick = () => {
         setIsRotating(true);
-        fetch('https://random-user-generator-api-chambrin.vercel.app/api/random')
+        fetch('https://random-user-generator-api-chambrin.vercel.app/api/user/').then(r => r.json()).then(data => setUser(data)).catch(error => console.log(error));
+        const randomId = Math.floor(Math.random() * 40) + 1; // Génère un nombre aléatoire entre 1 et 40
+        const url = `https://random-user-generator-api-chambrin.vercel.app/api/user/${randomId}`;
+
+        fetch(url)
             .then(response => response.json())
             .then(data => setUser(data))
             .catch(error => console.log(error));
+
         setTimeout(() => {
             setIsRotating(false);
         }, 1000);
