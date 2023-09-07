@@ -1,31 +1,32 @@
 export async function GET(request: Request, res: Response) {
-    let randomId = Math.floor(Math.random() * 40) + 1; // generate a random number between 1 and 40
-    let url = `https://random-user-generator-api-chambrin.vercel.app/api/user/${randomId}`;
-
-    // Fetch the user's data
     try {
-        let userResponse = await fetch(url);
-        if (!userResponse.ok) {
-            throw new Error(`HTTP error! status: ${userResponse.status}`);
+        let allUsersResponse = await fetch("https://random-user-generator-api-chambrin.vercel.app/api/user/all");
+        if (!allUsersResponse.ok) {
+            throw new Error(`HTTP error! status: ${allUsersResponse.status}`);
         }
-        let data = await userResponse.json();
+        let allUsers = await allUsersResponse.json();
 
-        // Return the user's data
-        return new Response(JSON.stringify(data), {
+        let randomId = Math.floor(Math.random() * allUsers.length);
+        let randomUser = allUsers[randomId];
+
+        return new Response(JSON.stringify(randomUser), {
             status: 200,
-
+            headers: {
+                "Content-Type": "application/json",
+                "Access-Control-Allow-Origin": "*",
+            },
         });
-    } catch(e) {
-        console.log('Error fetching user:', e);
+    } catch (e) {
+        console.log("Error fetching user:", e);
 
-        return new Response(JSON.stringify({error: 'An error occurred'}), {
+        return new Response(JSON.stringify({ error: "An error occurred" }), {
             status: 500,
             headers: {
-                'Access-Control-Allow-Origin': '*',
-                'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
-                'Content-Type': 'application/json',
-                'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+                "Content-Type": "application/json",
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+                "Access-Control-Allow-Headers": "Content-Type, Authorization",
             },
-        })
+        });
     }
 }
