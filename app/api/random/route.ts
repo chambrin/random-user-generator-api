@@ -1,24 +1,9 @@
 export async function GET(request: Request, res: Response) {
     try {
-        let allUsersResponse = await fetch("https://random-user-generator-api-chambrin.vercel.app/api/user/all");
-        if (!allUsersResponse.ok) {
-            throw new Error(`HTTP error! status: ${allUsersResponse.status}`);
-        }
-        let allUsers = await allUsersResponse.json();
+        const randomId = Math.floor(Math.random() * 40) + 1; // Génère un nombre aléatoire entre 1 et 40
+        const randomUserUrl = `https://random-user-generator-api-chambrin.vercel.app/api/user/${randomId}`;
 
-        let randomId = Math.floor(Math.random() * allUsers.length);
-        let randomUser = allUsers[randomId];
-
-        return new Response(JSON.stringify(randomUser), {
-            status: 200,
-            headers: {
-                "Content-Type": "application/json",
-                "Access-Control-Allow-Origin": "*",
-                "Cache-Control": "no-cache, no-store, must-revalidate",
-                "Pragma": "no-cache",
-                "Expires": "0",
-            },
-        });
+        return Response.redirect(randomUserUrl, 303); // redirection vers l'URL de l'utilisateur aléatoire
     } catch (e) {
         console.log("Error fetching user:", e);
 
